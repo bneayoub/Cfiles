@@ -13,14 +13,14 @@ void print_numbers(const char *separator, const unsigned int n, ...)
         int num = va_arg(args, int);
         printf("%d", num);
 
-        if (i < n - 1) // Print the separator only if it's not the last number
+        if (i < n - 1) 
         {
             printf("%s", separator);
         }
     }
 	putchar('\n');
 
-    va_end(args); // Don't forget to call va_end
+    va_end(args);
 }
 
 int main(void)
